@@ -4,18 +4,14 @@ board = {"[ ]", "[ ]", "[ ]",
 
 -- Prints the grid
 function printGrid(grid)
-    -- Print the grid in 3x3 format
     io.write("---------------\n")
     io.write("| ")
     for i = 1, 9 do
-        -- Print each element with a space in between
         io.write(grid[i] .. " ")
-
-        -- Add a newline after every 3 elements to form rows
         if i % 3 == 0 then
-            io.write("|\n")  -- Newline after the closing |
+            io.write("|\n")
             if i < 9 then
-                io.write("| ")  -- Print the starting | of the next row except for the last row
+                io.write("| ")
             end
         end
     end

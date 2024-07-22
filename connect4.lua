@@ -9,13 +9,12 @@ board = {{"[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]"},
 function printGrid(grid)
     io.write("-------------------------------")
     for i = 1, 6 do
-        io.write("\n")  -- Newline after the closing |
+        io.write("\n")
         io.write("| ")
         for j = 1, 7 do
-            -- Print each element with a space in between
             io.write(grid[i][j] .. " ")
             if j == 7 then
-                io.write("|")  -- Print the starting | of the next row except for the last row
+                io.write("|")
             end
         end
     end
