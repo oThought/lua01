@@ -1,2 +1,2 @@
-x = io.read("*n")
-print(x)
+pieces = {{{}, {}, {}, {}, {}, {}, {}, {}} * 8}
+print(#pieces)
